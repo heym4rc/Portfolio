@@ -20,7 +20,14 @@ if (navClose) {
 }
 
 /*==================== REMOVE MENU MOBILE ====================*/
+const navLink = document.querySelectorAll('.nav-link')
 
+function linkAction() {
+    // When we click on each nav-link, we remove the show-menu class
+    navMenu.classList.remove('show-menu')
+}
+
+navLink.forEach(n => n.addEventListener('click', linkAction)) 
 
 /*==================== ACCORDION SKILLS ====================*/
 
