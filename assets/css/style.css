@@ -7,7 +7,7 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 40; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -114,22 +114,22 @@ img {
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
-  padding: 2rem 0 4rem;
+  padding: 5rem 0 4rem;
 }
 
-.section__title {
+.section-title {
   font-size: var(--h1-font-size);
   color: var(--title-color);
 }
 
-.section__subtitle {
+.section-subtitle {
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-3);
 }
 
-.section__title, 
-.section__subtitle {
+.section-title, 
+.section-subtitle {
   text-align: center;
 }
 
@@ -300,7 +300,8 @@ img {
 }
 
 .home-scroll {
-  /* display: none; */
+  display: none;
+  padding-left: .5rem;
 }
 
 .scroll-button {
@@ -387,10 +388,126 @@ img {
 }
 
 /*==================== BUTTONS ====================*/
+.button {
+  display: inline-block;
 
+  background-color: var(--first-color);
+  color: #fff;
+  
+  padding: 1rem;
+  border-radius: .5rem;
+
+  font-weight: var(--font-medium);
+
+  font-family: inherit;
+  color: white;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.button:hover {
+  background-color: var(--first-color-alt);
+}
+
+.button-icon {
+  font-size: 1.25rem;
+  margin-left: var(--mb-0-5);
+}
+
+.button span {
+  display: block;
+  margin-left: 0.29rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.button:hover svg {
+  transform: translateX(2.3rem) rotate(45deg) scale(1.1);
+}
+
+.button:hover span {
+  transform: translateX(8rem);
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+.button-flex {
+  display: inline-flex;
+  align-items: center;
+}
 
 /*==================== ABOUT ====================*/
+.about-data {
+  text-align: center;
+}
 
+.about-description {
+  text-align: center;
+  margin-bottom: var(--mb-2-5);
+}
+
+.about-info {
+  display: flex;
+  justify-content: space-evenly;
+
+  margin-bottom: var(--mb-2-5);
+  gap: .5rem;
+}
+
+.about-box {
+  background-color: var(--container-color);
+  box-shadow: 0px 16px 8px 0px rgba(0,0,0,0.234);
+  
+  border-radius: 0.75rem;
+  padding: 0.75rem 0.5rem;
+}
+
+.about-title {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color)
+}
+
+.about-name {
+  font-size: var(--smaller-font-size);
+}
+
+.about-title,
+.about-name {
+  display: block;
+  text-align: center;
+}
+
+.about-icon {
+  font-size: 1.5rem;
+  color: var(--first-color);
+  margin-bottom: 0.5rem;
+}
 
 /*==================== SKILLS ====================*/
 
