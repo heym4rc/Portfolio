@@ -16,7 +16,7 @@
     />
 
     <!--==================== SWIPER CSS ====================-->
-    <!-- <link rel="stylesheet" href="assets/js/" /> -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -351,12 +351,15 @@
 
         <div class="qualification-container container">
           <div class="qualification-tabs">
-            <div class="qualification-button button-flex  qualification-active" data-target='#education'>
+            <div
+              class="qualification-button button-flex qualification-active"
+              data-target="#education"
+            >
               <i class="uil uil-graduation-cap qualification-icon"></i>
               Education
             </div>
 
-            <div class="qualification-button button-flex" data-target='#work'>
+            <div class="qualification-button button-flex" data-target="#work">
               <i class="uil uil-briefcase qualification-icon"></i>
               Work
             </div>
@@ -364,7 +367,11 @@
 
           <div class="qualification-sections">
             <!-- QUALIFICATION CONTENT 1 -->
-            <div class="qualification-content qualification-active" data-content id="education">
+            <div
+              class="qualification-content qualification-active"
+              data-content
+              id="education"
+            >
               <!-- QUALIFICATION 1 -->
               <div class="qualification-data">
                 <div>
@@ -464,11 +471,89 @@
         </div>
       </section>
 
-      <!--==================== SERVICES ====================-->
-      <section class="services section" id="services"></section>
-
       <!--==================== PORTFOLIO ====================-->
-      <section class="portfolio section" id="portfolio"></section>
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section-title">Portfolio</h2>
+        <span class="section-subtitle">Most recent work</span>
+
+        <div class="portfolio-container container swiper swiper-container">
+          <div class="swiper-wrapper">
+            <!-- PORTFOLIO 1 -->
+            <div class="portfolio-content grid swiper-slide">
+              <img
+                src="assets/img/Web 1920 – 1.png"
+                alt=""
+                class="portfolio-img"
+              />
+              <div class="portfolio-data">
+                <h3 class="portfolio-title">Project Name</h3>
+                <p class="portfolio-description">
+                  Website adaptable to all devices, with ui components and
+                  animated interactions.
+                </p>
+                <a
+                  href=""
+                  class="button button-flex button-small portfolio-button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button-icon"></i>
+                </a>
+              </div>
+            </div>
+            <!-- PORTFOLIO 2 -->
+            <div class="portfolio-content grid swiper-slide">
+              <img
+                src="assets/img/Cracha 4 logo baixa (close).png"
+                alt=""
+                class="portfolio-img"
+              />
+              <div class="portfolio-data">
+                <h3 class="portfolio-title">Project Name</h3>
+                <p class="portfolio-description">
+                  Website adaptable to all devices, with ui components and
+                  animated interactions.
+                </p>
+                <a
+                  href=""
+                  class="button button-flex button-small portfolio-button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button-icon"></i>
+                </a>
+              </div>
+            </div>
+            <!-- PORTFOLIO 3 -->
+            <div class="portfolio-content grid swiper-slide">
+              <img
+                src="assets/img/CALOR.png"
+                alt=""
+                class="portfolio-img"
+              />
+              <div class="portfolio-data">
+                <h3 class="portfolio-title">Project Name</h3>
+                <p class="portfolio-description">
+                  Website adaptable to all devices, with ui components and
+                  animated interactions.
+                </p>
+                <a
+                  href=""
+                  class="button button-flex button-small portfolio-button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
 
       <!--==================== PROJECT IN MIND ====================-->
       <section class="project section"></section>
