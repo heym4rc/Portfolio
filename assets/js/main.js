@@ -61,7 +61,7 @@ tabs.forEach((tab) => {
     });
     target.classList.add("qualification-active");
 
-    tab.forEach((tab) => {
+    tabs.forEach((tab) => {
       tab.classList.remove("qualification-active");
     });
     tab.classList.add("qualification-active");
@@ -69,18 +69,26 @@ tabs.forEach((tab) => {
 });
 
 /*==================== PORTFOLIO SWIPER  ====================*/
-let swiper = new swiper('.portfolio-container', {
-  cssMode: true,
+const swiper = new Swiper('.swiper-container', {
   loop: true,
-
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true,
+  },
   navigation: {
     nextEl: '.swiper-button-next',
-    prevEl:  '.swiper-button-prev',
+    prevEl: '.swiper-button-prev',
   },
   pagination: {
     el: '.swiper-pagination',
     clickAble: true,
   },
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    }
+  }
 });
 
 /*==================== TESTIMONIAL ====================*/
