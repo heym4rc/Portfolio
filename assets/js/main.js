@@ -71,12 +71,8 @@ tabs.forEach((tab) => {
 /*==================== PORTFOLIO SWIPER  ====================*/
 let swiper = new Swiper(".portfolio-container", {
   slidesPerView: 1,
-  spaceBetween: 30,
-  loop: true,
-  autoplay: {
-    delay: 3500,
-    disableOnInteraction: false,
-  },
+  spaceBetween: 40,
+  effect: "fade",
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -88,9 +84,56 @@ let swiper = new Swiper(".portfolio-container", {
 });
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+const sections = document.querySelectorAll('section[id]')
+function scrollActive() {
+
+  const checkpoint = window.pageYOffset + (window.innerHeight / 8) * 4
+
+  for (const section of sections) {
+      const sectionTop = section.offsetTop
+      const sectionHeight = section.offsetHeight
+      const sectionId = section.getAttribute('id')
+
+      const checkpointStart = checkpoint >= sectionTop
+      const checkpointEnd = checkpoint <= sectionTop + sectionHeight
+
+      if (checkpointStart && checkpointEnd) {
+          document
+              .querySelector('nav ul li a[href*=' + sectionId + ']')
+              .classList.add('active-link')
+      } else {
+          document
+              .querySelector('nav ul li a[href*=' + sectionId + ']')
+              .classList.remove('active-link')
+      }
+  }
+}
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/
+const header = document.querySelector('#header')
+const navHeight = header.offsetHeight
+
+function scrollHeader() {
+    if (this.window.scrollY >= navHeight) {
+        // more height than header
+        header.classList.add('scroll-header')
+    } else {
+        // less height than header
+        header.classList.remove('scroll-header')
+    }
+}
 
 /*==================== SHOW SCROLL UP ====================*/
+function scrollUp() {
+  const scrollUp = document.querySelector('.scrollup')
+  if (this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+}
 
 /*==================== DARK LIGHT THEME ====================*/
+
+/* WHEN SCROLL */
+window.addEventListener('scroll', function () {
+  scrollActive()
+  scrollHeader()
+  scrollUp()
+})
