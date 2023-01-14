@@ -740,10 +740,6 @@ img {
   position: relative;
 }
 
-.swiper-container-horizontal > .swiper-pagination-bullets {
-  bottom: -2.5rem;
-}
-
 .swiper-pagination-bullet {
   background-color: var(--first-color);
 }

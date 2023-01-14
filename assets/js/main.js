@@ -69,29 +69,23 @@ tabs.forEach((tab) => {
 });
 
 /*==================== PORTFOLIO SWIPER  ====================*/
-const swiper = new Swiper('.swiper-container', {
+let swiper = new Swiper(".portfolio-container", {
+  slidesPerView: 1,
+  spaceBetween: 30,
   loop: true,
-  effect: 'fade',
-  fadeEffect: {
-    crossFade: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
   },
   pagination: {
-    el: '.swiper-pagination',
-    clickAble: true,
+    el: ".swiper-pagination",
+    clickable: true,
   },
-  breakpoints: {
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 40,
-    }
-  }
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
-
-/*==================== TESTIMONIAL ====================*/
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 
