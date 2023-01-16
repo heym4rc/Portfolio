@@ -774,6 +774,9 @@ img {
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
   bottom: -2.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .swiper-pagination-bullet {
@@ -976,7 +979,7 @@ img {
   }
 
   .section {
-    padding: 6rem 0 2rem;
+    padding: 6rem 0 4rem;
   }
   .section-subtitle {
     margin-bottom: 4rem;
@@ -1048,7 +1051,11 @@ img {
   }
 
   .contact-container {
-    grid-template-columns: repeat(3, 1fr);
+    padding: 4rem 0 2rem;
+  }
+  .contact-infos {
+    display: flex;
+    justify-content: space-around;
   }
 
   .footer-container {
