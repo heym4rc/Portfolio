@@ -467,7 +467,7 @@ img {
 }
 
 .button:hover svg {
-  transform: translateX(2.3rem) rotate(45deg) scale(1.1);
+  transform: translateX(1.6rem) rotate(45deg) scale(1.1);
 }
 
 .button:hover span {
@@ -613,7 +613,7 @@ img {
 }
 
 .skills-html {
-  width: 80%;
+  width: 65%;
 }
 
 .skills-css {
