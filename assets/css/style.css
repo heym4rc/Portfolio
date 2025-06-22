@@ -791,6 +791,10 @@ img {
   opacity: 1;
 }
 
+.swiper-pagination-bullet-active {
+  background-color: var(--first-color);
+}
+
 .swiper-button-next,
 .swiper-button-prev {
   outline: none;
