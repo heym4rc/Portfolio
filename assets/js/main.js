@@ -69,18 +69,35 @@ tabs.forEach((tab) => {
 });
 
 /*==================== PORTFOLIO SWIPER  ====================*/
-let swiper = new Swiper(".portfolio-container", {
-  slidesPerView: 1,
-  spaceBetween: 40,
-  effect: "fade",
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+let swiperPortfolio = new Swiper(".swiper", {
+  loop: true,
+  autoplay: {
+    delay: 4500,
+    disableOnInteraction: false,
   },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+const autoplayButton = document.querySelector(".swiper-autoplay-button");
+const autoplayIcon = autoplayButton.querySelector("i");
+
+autoplayButton.addEventListener("click", () => {
+  if (swiperPortfolio.autoplay.running) {
+    swiperPortfolio.autoplay.stop();
+    autoplayIcon.classList.remove("uil-pause");
+    autoplayIcon.classList.add("uil-play");
+  } else {
+    swiperPortfolio.autoplay.start();
+    autoplayIcon.classList.remove("uil-play");
+    autoplayIcon.classList.add("uil-pause");
+  }
 });
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/

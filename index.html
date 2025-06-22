@@ -56,22 +56,12 @@
                 <i class="uil uil-scenery nav-icon"></i> Portfólio
               </a>
             </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">
-                <i class="uil uil-message nav-icon"></i> Contato
-              </a>
-            </li>
           </ul>
           <i class="uil uil-times nav-close" id="nav-close"></i>
         </div>
 
-        <div class="nav-btns">
-          <!-- THEME CHANGE BUTTON -->
-          <i class="uil uil-moon change-theme" id="theme-button"></i>
-
-          <div class="nav-toggle" id="nav-toggle">
-            <i class="uil uil-apps"></i>
-          </div>
+        <div class="nav-toggle" id="nav-toggle">
+          <i class="uil uil-apps"></i>
         </div>
       </nav>
     </header>
@@ -181,16 +171,23 @@
       <!--==================== ABOUT ====================-->
       <section class="about section" id="about">
         <section class="about section" id="about">
-          <h2 class="section-title">Sobre</h2>
-          <span class="section-subtitle">Minha introdução</span>
+          <h2 class="section-title">Do Design ao Código</h2>
+          <span class="section-subtitle">Minha Jornada</span>
 
           <div class="about-container container grid">
             <img src="" alt="" class="about-img" />
 
             <div class="about-data">
               <p class="about-description">
-                Publicitário com conhecimento e experiência, entregando trabalho de qualidade em Design e Social Media. 
-Migrando para mundo tech que tanto amo, como Desenvolvedor Front-End Jr. | HTML, CSS, JS.
+                Com uma base sólida de mais de <strong>4 anos no mercado criativo</strong>, onde aprendi a fundo
+                sobre design, comunicação e a importância da experiência do usuário, hoje eu direciono
+                toda essa bagagem para a engenharia de software.<br><br>
+                Meu objetivo é me tornar um <strong>Desenvolvedor Full-Stack completo</strong>, capaz de transitar por todo o ciclo de
+                vida de um produto digital: desde a criação da interface e da experiência do usuário no Front-End,
+                até a construção de APIs robustas, regras de negócio e gerenciamento de bancos de dados no Back-End.<br><br>
+                Através da minha <strong>Pós-Graduação</strong> e estudos focados em <strong>Java, Python e no ecossistema web</strong>, estou construindo
+                a capacidade de não apenas idealizar uma solução, mas de tirá-la do papel e transformá-la em um produto
+                funcional, escalável e de alta qualidade.
               </p>
               <div class="about-info">
                 <div class="about-box">
@@ -217,18 +214,6 @@ Migrando para mundo tech que tanto amo, como Desenvolvedor Front-End Jr. | HTML,
                     >Empresas <br> trabalhadas</span
                   >
                 </div>
-              </div>
-
-              <div class="about-buttons">
-                <a
-                  download=""
-                  href="assets/pdf/FrontEnd CV PTBR.pdf"
-                  class="button button-flex"
-                >
-                  Download CV<i
-                    class="uil uil-file-download-alt button-icon"
-                  ></i>
-                </a>
               </div>
             </div>
           </div>
@@ -529,10 +514,10 @@ Migrando para mundo tech que tanto amo, como Desenvolvedor Front-End Jr. | HTML,
         <h2 class="section-title">Portfólio</h2>
         <span class="section-subtitle">Mais recentes</span>
 
-        <div class="portfolio-container container swiper swiper-container">
+        <div class="portfolio-container container swiper">
           <div class="swiper-wrapper">
             <!-- PORTFOLIO 1 -->
-            <div class="portfolio-content grid swiper-slide">
+            <div class="portfolio-content swiper-slide">
               <img
                 src="assets/img/Calor 2.jpg"
                 alt=""
@@ -553,46 +538,46 @@ Migrando para mundo tech que tanto amo, como Desenvolvedor Front-End Jr. | HTML,
               </div>
             </div>
             <!-- PORTFOLIO 2 -->
-            <div class="portfolio-content grid swiper-slide">
+            <div class="portfolio-content swiper-slide">
               <img
                 src="assets/img/Cracha 4 logo baixa (close).png"
                 alt=""
                 class="portfolio-img"
               />
               <div class="portfolio-data">
-                <h3 class="portfolio-title">Project Name</h3>
+                <h3 class="portfolio-title">Crachá Yougopotamia</h3>
                 <p class="portfolio-description">
-                  Website adaptable to all devices, with ui components and
-                  animated interactions.
+                  Crachá para evento universitário, com foco em design e comunicação visual.
                 </p>
                 <a
-                  href=""
+                  href="https://www.behance.net/gallery/198882815/Cracha-Yougopotamia-20241"
+                  target="_blank"
                   class="button button-flex button-small portfolio-button"
                 >
-                  Demo
+                  Veja Mais
                   <i class="uil uil-arrow-right button-icon"></i>
                 </a>
               </div>
             </div>
             
             <!-- PORTFOLIO 3 -->
-            <!-- <div class="portfolio-content grid swiper-slide">
-              <img src="assets/img/CALOR.png" alt="" class="portfolio-img" />
+            <div class="portfolio-content swiper-slide">
+              <img src="assets/img/DRINK PUB YOUGOPOTAMIA.png" alt="" class="portfolio-img" />
               <div class="portfolio-data">
-                <h3 class="portfolio-title">Project Name</h3>
+                <h3 class="portfolio-title">Cardápio de Drinks</h3>
                 <p class="portfolio-description">
-                  Website adaptable to all devices, with ui components and
-                  animated interactions.
+                  Cardápio de drinks para o evento Yougopotamia, combinando design e funcionalidade.
                 </p>
                 <a
-                  href=""
+                  href="https://www.behance.net/gallery/198882815/Cracha-Yougopotamia-20241"
+                  target="_blank"
                   class="button button-flex button-small portfolio-button"
                 >
-                  Demo
+                  Veja Mais
                   <i class="uil uil-arrow-right button-icon"></i>
                 </a>
               </div>
-            </div> -->
+            </div>
           </div>
 
           <div class="swiper-button-next">
@@ -602,92 +587,58 @@ Migrando para mundo tech que tanto amo, como Desenvolvedor Front-End Jr. | HTML,
             <i class="uil uil-angle-left swiper-portfolio-icon"></i>
           </div>
           <div class="swiper-pagination"></div>
-        </div>
-      </section>
-
-      <!--==================== CONTACT ME ====================-->
-      <section class="contact section" id="contact">
-        <h2 class="section-title">Contato</h2>
-        <span class="section-subtitle">Me ligue</span>
-
-        <div class="contact-container container grid">
-          <div class="contact-infos">
-            <div class="contact-information">
-              <i class="uil uil-phone contact-icon"></i>
-              <div>
-                <h3 class="contact-title">WhatsApp</h3>
-                <a href="https://wa.me/5583996147700" target="_blank"><span class="contact-subtitle">83 9 9614-7700</span></a>
-              </div>
-            </div>
-
-            <div class="contact-information">
-              <i class="uil uil-envelope contact-icon"></i>
-
-              <div>
-                <h3 class="contact-title">Email</h3>
-                <a href="mailto:marcioreg77@gmail.com" target="_blank"><span class="contact-subtitle">marcioreg77@gmail.com</span></a>
-              </div>
-            </div>
-            <div class="contact-information">
-              <i class="uil uil-map-marker contact-icon"></i>
-
-              <div>
-                <h3 class="contact-title">Location</h3>
-                <span class="contact-subtitle">58063-030, João Pessoa - PB</span>
-              </div>
-            </div>
+          <!--div class="swiper-autoplay-button">
+            <i class="uil uil-pause"></i>
           </div>
-        </div>
+        </div>  
       </section>
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer">
-      <div class="footer-bg">
-        <div class="footer-container container grid">
-          <div>
-            <h1 class="footer-title">Márcio</h1>
-            <span class="footer-subtitle">Desenvolvedor Front-End</span>
+    <footer class="footer-container">
+      <!-- O card principal de contato -->
+      <div class="contact-card">
+          <div class="contact-card__header">
+              <img src="https://placehold.co/100x100/1C1C1E/FFFFFF?text=MR" alt="Foto de perfil de Márcio Régio" class="contact-card__avatar">
+              <div class="contact-card__info">
+                  <h3>Márcio Régio</h3>
+                  <p>@heymarcx</p>
+                  <div class="status">
+                      <span class="status-dot"></span>
+                      Disponível
+                  </div>
+              </div>
           </div>
-
-          <ul class="footer-links">
-            <li>
-              <a href="#about" class="footer-link">Sobre</a>
-            </li>
-            <li>
-              <a href="#portfolio" class="footer-link">Portfólio</a>
-            </li>
-            <li>
-              <a href="#contact" class="footer-link">Contato</a>
-            </li>
-          </ul>
-
-          <div class="footer-socials">
-            <a
-              href="https://www.linkedin.com/in/marciooregio/"
-              target="_blank"
-              class="footer-social"
-            >
-              <i class="uil uil-linkedin-alt"></i>
-            </a>
-            <a
-              href="https://github.com/heym4rc"
-              target="_blank"
-              class="footer-social"
-            >
-              <i class="uil uil-github-alt"></i>
-            </a>
-            <a
-              href="https://www.behance.net/marciorm"
-              target="_blank"
-              class="footer-social"
-            >
-              <i class="uil uil-behance"></i>
-            </a>
+          <div class="contact-card__body">
+              <div class="contact-card__text">
+                  <h2>Vamos construir algo <span>extraordinário.</span></h2>
+                  <p>
+                      Se você tem uma ideia ou um projeto em mente, <a href="mailto:marcioreg77@gmail.com">entre em contato</a> 
+                      ou me chame para uma conversa no <a href="https://www.linkedin.com/in/marcioregio/" target="_blank">LinkedIn</a>.
+                  </p>
+              </div>
+              <a href="mailto:marcioreg77@gmail.com" class="contact-card__arrow-link" aria-label="Enviar um e-mail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+              </a>
           </div>
-        </div>
       </div>
-    </footer>
+
+      <!-- A barra de informações inferior -->
+      <div class="copyright-bar">
+          <div class="copyright-bar__left">
+              <span>João Pessoa, PB - Brasil</span>
+          </div>
+          <div class="copyright-bar__center">
+              <span>© Márcio Régio 2025</span>
+          </div>
+          <div class="copyright-bar__right">
+              <span>Feito com ❤️.</span>
+          </div>
+      </div>
+  </footer>
 
     <!--==================== SCROLL TOP ====================-->
     <a href="#home" class="scrollup" id="scrollup">
