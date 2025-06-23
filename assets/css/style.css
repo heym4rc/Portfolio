@@ -333,6 +333,10 @@ img {
   margin-bottom: var(--mb-2);
 }
 
+.arsenal {
+  color: var(--accent-color);
+}
+
 .home-scroll {
   display: none;
   padding-left: 0.5rem;
@@ -697,7 +701,7 @@ img {
 }
 
 .qualification-rounder {
-  display: inline-block;
+  display: inline-table;
   width: 13px;
   height: 13px;
   background-color: var(--first-color);
@@ -1000,14 +1004,21 @@ img {
     align-items: flex-start;
   }
   .contact-card__arrow-link {
-    margin-top: 1.5rem;
-    align-self: flex-start;
-    width: 60px;
-    height: 60px;
+    align-self: flex-end;
   }
   .copyright-bar {
     flex-direction: column;
-    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .contact-card {
+    padding: 1.5rem;
+  }
+  .contact-card__text h2 {
+    font-size: 1.4rem;
   }
 }
 
